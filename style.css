@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+body{
+    background-color: #777;
+}
+header{
+    background-color: #f39c12;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+header h1{
+    padding-top: 15px;
+    font-size: 44px;
+    color: gre
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.logo img{
+    width: 100px;
+    padding-left: 
+}
+    .container{
+    display:flex;
+    min-height:100vh;
+}
+
+aside{
+    background:#4fa3c0;
+    width:220px;
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+
+}
+
+aside a{
+    background:#2c3e50;
+    color:white;
+    padding:12px;
+    text-decoration:none;
+    border-radius:8px;
+    text-align:center;
+}
+
+main{
+    flex:1;
+    padding:20px;
+}
+main .d{
+    background-color: #4fa3c0;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    align-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+table{
+    width:100%;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+table th, table td{
+    padding:12px;
+    border-bottom:1px solid #ddd;
+    text-align:center;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    max-width:400px;
+}
+
+input{
+    padding:10px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+button{
+    background:#2c3e50;
+    color:white;
+    padding:10px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+@media(max-width:768px){
+
+    .container{
+    flex-direction:column;
+}
+
+aside{
+    width:100%;
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+
+aside a{
+    flex:1;
+}
+
+
+
+@media(max-width:1000px){
+    .cards{
+        grid-template-columns: repeat(2,1fr)
+    }
+    .search{
+        width: 100%;
+    }
+    header h1{
+        font-size: 18px;
+    }
+    .logo img{
+        width: 60px;
+    }
+    .sidebar button{
+        width: 130px;
+    }
+}
+@media(max-width:700px){
+    .container{
+        flex-direction: column;
+    }
+    .sidebar{
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .sidebar{
+        flex: 1 1 40%;
+    }
+    .cards{
+        grid-template-columns: 1fr;
+    }
+   
+}

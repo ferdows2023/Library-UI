@@ -1,0 +1,115 @@
+body{
+    font-family: vazirmatn;
+    background-color: #d9c7b8;
+    margin: 0;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.left img{
+    width: 350px;
+    height: 280px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+}
+.right img{
+    width: 350px;
+    height: 280px;
+    object-fit: cover;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+.login-box{
+    height: 300px;
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    margin: 0 20;
+    box-shadow: 0 0 15px rgba(0.0.0.0.2);
+}
+.login-box h1{
+    margin: 0;
+    color: #8a5a2b;
+}
+.login-box h3{
+    margin-top: 5px;
+    font-size: 16px;
+    color: #555;
+}
+.input{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.input label{
+    width: 120px;
+    text-align: right;
+    margin-left: -30px;
+    font-weight: bold;
+}
+.input input{
+    flex: 1;    
+    width: 220px;
+    text-align: right;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.button{
+    margin-top: 20px;
+}
+button{
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px
+}
+.button button{
+    background-color: #34435e;
+}
+.button a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+.link{
+    padding-top: 5px;
+}
+.link a{
+    text-decoration: none;
+    color: blue;
+    font-size: 14px;
+    
+    
+}
+.button button:hover{
+    background-color: #3f58ac;
+}
+
+/*
+
+
+@media(max-width:900px){
+    .container{
+        flex-direction: column;
+        height: auto;
+        padding: 40p 0;
+    }
+    .left img{
+        width: 90%;
+        height: 220px;
+    }
+.right img{
+        width: 90%;
+        height: 220px;
+    }
+}*/

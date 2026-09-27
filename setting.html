@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>کتاب ها</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="setting.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+           <img src="images/logo1.png">
+        </div>
+          <h1>کتابخانه آشیانه دانش</h1>
+        <div class="logo">
+           <img src="images/logo1.png">
+        </div>
+    </header>
+
+    <div class="container">
+             <aside class="sidebar">
+                <button onclick="window.location.href='library.html'"> صفحه اصلی</button>
+                <button onclick="window.location.href='costumers.html'">مشتریان</button>
+                <button onclick="window.location.href='borrow.html'">کتاب های امانت داده شده</button>
+                <button onclick="window.location.href='setting.html'"> تنظیمات</button>
+            </aside>
+            <main>
+              <h2 class="d">تنظیمات سیستم</h2>
+                    <div class="settings-box">
+                        <div class="setting-item">
+                            <label>زبان</label>
+                            <select>
+                                <option>فارسی</option>
+                                <option>English</option>
+                            </select>
+                        </div>
+                        <div class="setting-item">
+                            <label>حالت تاریک (Dark Mode)</label>
+                            <input type="checkbox" class="color">
+                        </div>
+                        <div class="setting-item">
+                            <label>اندازه فونت</label>
+                            <select>
+                                <option>کوچک</option>
+                                <option>متوسط</option>
+                                <option>بزرگ</option>
+                            </select>
+                        </div>
+                        <div class="setting-item">
+                            <label>اعلان</label>
+                            <input type="checkbox" checked class="color">
+                        </div>
+                        <button style=" margin-top: 15px;">ذخیره تنظیمات</button>
+                    </div>
+
+            </main>
+    </div>
+</body>
+</html>

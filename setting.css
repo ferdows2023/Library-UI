@@ -1,0 +1,76 @@
+
+.settings-box{
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+.setting-item{
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+.setting-item label{
+    font-weight: bold;
+}
+.setting-item select, .setting-item input{
+    padding: 5px;
+    width: 90px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+.color{
+    width: 50px;
+    height: 20px;
+    padding-left: 40px;
+    margin-left: 12px;
+}
+main button{
+    width: 20%;
+    margin: auto;
+}
+
+
+@media(max-width:1000px){
+   .settings-box{
+/*        max-width: 100%;*/
+        width: 100%;
+    }
+    .search{
+        width: 100%;
+    }
+    header h1{
+        font-size: 18px;
+    }
+    .logo img{
+        width: 60px;
+    }
+    .sidebar button{
+        width: 130px;
+    }
+}
+@media(max-width:700px){
+    .settings-box{
+/*        max-width: 100%;*/
+        width: 100%;
+    }
+    .sidebar{
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .sidebar{
+        flex: 1 1 40%;
+    }
+    .cards{
+        grid-template-columns: 1fr;
+    }
+   
+}
