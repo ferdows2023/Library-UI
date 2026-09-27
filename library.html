@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="library.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo1.png">
+        </div>
+        <h1>کتابخانه آشیانه دانش</h1>
+        <div class="logo">
+            <img src="images/logo1.png">
+        </div>
+    </header>
+    
+    
+    <div class="container">
+        <aside class="sidebar">
+            <button onclick="window.location.href='book.html'">کتاب ها</button>
+            <button onclick="window.location.href='costumers.html'">مشتریان</button>
+            <button onclick="window.location.href='borrow.html'">کتاب های امانت داده شده</button>
+            <button onclick="window.location.href='setting.html'"> تنظیمات</button>
+        </aside>
+        
+        
+        
+        <main class="main">
+            <div class="search">
+                <input type="text" placeholder="جستجوی کتاب...">
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <h3>کتاب های موجود</h3>
+                    <h2>675</h2>
+              </div>
+                <div class="card">
+                    <h3>مشتریان</h3>
+                    <h2>790</h2>
+                </div>
+                <div class="card">
+                    <h3>کتاب های امانت داده شده</h3>
+                    <h2>200</h2>
+                </div>
+                <div class="card">
+                    <h3> کل کتاب ها</h3>
+                    <h2>1380</h2>
+                </div>
+            </div>
+              
+            <div class="table-box">
+                <h3>کتاب‌های اخیر</h3>
+                <table>
+                    <tr>
+                        <th>نام کتاب</th>
+                        <th>نویسنده</th>
+                        <th>وضعیت</th>
+                    </tr>
+                    <tr>
+                        <td>راهنمای HTML و CSS</td>
+                        <td>قاسم "پریان"</td>
+                        <td class="status-available">موجود</td>
+                    </tr>
+                    <tr>
+                        <td> جاوااسکریپت</td>
+                        <td>فرهاد "فروتن"</td>
+                        <td class="status-borrowed">امانت داده شده</td>
+                    </tr>
+                    <tr>
+                        <td>طراحی پایگاه داده</td>
+                        <td>پرویز "نوری"</td>
+                        <td class="status-available">موجود</td>
+                    </tr>
+                    <tr>
+                        <td>شبکه</td>
+                        <td>علی "خادیم"</td>
+                        <td class="status-available">موجود</td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
